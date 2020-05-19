@@ -5,4 +5,4 @@ WORKDIR /usr/src/app
 COPY . .
 
 # Added to ENTRYPOINT of base image.
-CMD ["run", "--allow-env", "--allow-net", "main.ts"]
+CMD ["run", "--allow-env", "--allow-net", "--allow-read", "main.ts"]
